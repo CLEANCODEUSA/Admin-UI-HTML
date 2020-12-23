@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>client-ui</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-start align-items-center justify-content-sm-start align-items-sm-center justify-content-md-start align-items-md-center justify-content-lg-start align-items-lg-center justify-content-xl-center align-items-xl-center header-bg">
+        <div class="col d-xl-flex header">
+            <h1 class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-start justify-content-sm-start justify-content-md-start"><br><img src="assets/img/csi.png"></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="modal fade" role="dialog" tabindex="-1" id="create-new-event">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Create New Event</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                            <div id="create-new-event-menu" class="create-new-event-menu">
+                                <ul>
+                                    <li><a id="select-event-type" href="#">Start</a></li>
+                                    <li><a id="event-details" href="#">Event Details</a></li>
+                                    <li><a id="registration" href="#">Registration</a></li>
+                                    <li><a id="demographics" href="#">Demographics</a></li>
+                                    <li><a id="qualifications" href="#">Qualification</a></li>
+                                    <li><a id="sessions" href="#">Sessions</a></li>
+                                    <li><a id="packages" href="#">Packages</a></li>
+                                    <li><a id="event-options-link" href="#">Event Options</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" id="select-event-type-div">
+                                    <div class="col">
+                                        <h4 class="title">Select Event Type</h4>
+                                    </div><!--*-*-*-*-*-*-*-*-*-*- BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
+		<div id="range_slides_4_columns_carousel" class="carousel slide range_slides_carousel_wrapper swipe_x ps_easeOutCirc" data-ride="carousel" data-duration="500" data-interval="5000" data-pause="hover">
+
+			<!--========= Indicators =========-->
+			<ol class="carousel-indicators range_slides_carousel_indicators">
+				<li data-target="#range_slides_4_columns_carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#range_slides_4_columns_carousel" data-slide-to="1"></li>
+			</ol>
+
+			<!--========= Wrapper for slides =========-->
+			<div class="carousel-inner range_slides_carousel_inner" role="listbox">
+
+				<!--========= First slide =========-->
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/3devent1.png" alt="slider 01"></a>
+							<h4>Seminar</h4>
+							<p>Corporate Specific Event with Target Audience In Mind</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/ces_expo.png" alt="slider 02"></a>
+							<h4>Social</h4>
+							<p>Interest-based, Reunions, Parties, Galas Centered Around Entertainment</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/booth.png" alt="slider 03"></a>
+							<h4>Trade Show</h4>
+							<p>Corporate Event Showcasing Latest Products to Businesses/General Public</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/zoom.png" alt="slider 04"></a>
+							<h4>Workshop</h4>
+							<p>Brainstorming, Training Sessions, Classes to Connect with Staff or Public</p>
+						</div>
+					</div>
+				</div>
+
+				<!--========= Second Slide =========-->
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/3devent1.png" alt="slider 05"></a>
+							<h4>Seminar</h4>
+							<p>Corporate Specific Event with Target Audience In Mind</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/ces_expo.png" alt="slider 06"></a>
+							<h4>Social</h4>
+							<p>Interest-based, Reunions, Parties, Galas Centered Around Entertainment</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/booth.png" alt="slider 07"></a>
+							<h4>Trade Show</h4>
+							<p>Corporate Event Showcasing Latest Products to Businesses/General Public</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/zoom.png" alt="slider 08"></a>
+							<h4>Workshop</h4>
+							<p>Brainstorming, Training Sessions, Classes to Connect with Staff or Public</p>
+						</div>
+					</div>
+				</div>
+				
+				<!--======= Navigation Buttons =========-->
+
+				<!--======= Left Button =========-->
+				<a class="carousel-control-prev range_slides_carousel_control_left" href="#range_slides_4_columns_carousel" data-slide="prev">
+					<span class="fa fa-chevron-left range_slides_carousel_control_icons" aria-hidden="true"></span>
+				</a>
+
+				<!--======= Right Button =========-->
+				<a class="carousel-control-next range_slides_carousel_control_right" href="#range_slides_4_columns_carousel" data-slide="next">
+					<span class="fa fa-chevron-right range_slides_carousel_control_icons" aria-hidden="true"></span>
+				</a>
+
+			</div>
+
+		</div> <!--*-*-*-*-*-*-*-*-*-*- END BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*--></div>
+                                <div class="row" id="event-details-div">
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="row" id="event-name">
+                                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12"><input type="text" class="event-name" placeholder="Event Name"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><input type="text" id="datetimepicker1" class="form-control start-date-picker" placeholder="Start Date"><span class="input-group-addon">&nbsp;<span class="glyphicon glyphicon-calendar"></span></span>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><input type="text" id="datetimepicker2" class="form-control end-date-picker" placeholder="End Date"><span class="input-group-addon">&nbsp;<span class="glyphicon glyphicon-calendar"></span></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9"><input type="text" class="location-input" placeholder="Location"></div>
+                                            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3"><p class="toggle-txt-tags">Virtual</p>
+<label class="switch switch-virtual">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 tags-div">
+                                        <h5>Tags</h5>
+                                        <div class="row"><select id="js-tag-select" class="js-tag-select" name="states[]" multiple="multiple" style="width:100%;">
+  <option value="1">Window</option>
+  <option value="2">File Browser</option>
+  <option value="3">Pirates of the Carribbean</option>
+  <option value="4">Sequel</option>
+</select>
+</div>
+                                    </div>
+                                    <div class="col">
+                                        <h6>Event Type</h6>
+                                    </div><!--*-*-*-*-*-*-*-*-*-*- BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
+		<div id="range_slides_4_columns_carousel" class="carousel slide range_slides_carousel_wrapper swipe_x ps_easeOutCirc" data-ride="carousel" data-duration="500" data-interval="5000" data-pause="hover">
+
+			<!--========= Indicators =========-->
+			<ol class="carousel-indicators range_slides_carousel_indicators">
+				<li data-target="#range_slides_4_columns_carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#range_slides_4_columns_carousel" data-slide-to="1"></li>
+			</ol>
+
+			<!--========= Wrapper for slides =========-->
+			<div class="carousel-inner range_slides_carousel_inner" role="listbox">
+
+				<!--========= First slide =========-->
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/3devent1.png" alt="slider 01"></a>
+							<h4>Seminar</h4>
+							<p>Corporate Specific Event with Target Audience In Mind</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/ces_expo.png" alt="slider 02"></a>
+							<h4>Social</h4>
+							<p>Interest-based, Reunions, Parties, Galas Centered Around Entertainment</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/booth.png" alt="slider 03"></a>
+							<h4>Trade Show</h4>
+							<p>Corporate Event Showcasing Latest Products to Businesses/General Public</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/zoom.png" alt="slider 04"></a>
+							<h4>Workshop</h4>
+							<p>Brainstorming, Training Sessions, Classes to Connect with Staff or Public</p>
+						</div>
+					</div>
+				</div>
+
+				<!--========= Second Slide =========-->
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/3devent1.png" alt="slider 05"></a>
+							<h4>Seminar</h4>
+							<p>Corporate Specific Event with Target Audience In Mind</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/ces_expo.png" alt="slider 06"></a>
+							<h4>Social</h4>
+							<p>Interest-based, Reunions, Parties, Galas Centered Around Entertainment</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/booth.png" alt="slider 07"></a>
+							<h4>Trade Show</h4>
+							<p>Corporate Event Showcasing Latest Products to Businesses/General Public</p>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 range_slides_item_image">
+							<a href="#"><img src="assets/img/zoom.png" alt="slider 08"></a>
+							<h4>Workshop</h4>
+							<p>Brainstorming, Training Sessions, Classes to Connect with Staff or Public</p>
+						</div>
+					</div>
+				</div>
+				
+				<!--======= Navigation Buttons =========-->
+
+				<!--======= Left Button =========-->
+				<a class="carousel-control-prev range_slides_carousel_control_left" href="#range_slides_4_columns_carousel" data-slide="prev">
+					<span class="fa fa-chevron-left range_slides_carousel_control_icons" aria-hidden="true"></span>
+				</a>
+
+				<!--======= Right Button =========-->
+				<a class="carousel-control-next range_slides_carousel_control_right" href="#range_slides_4_columns_carousel" data-slide="next">
+					<span class="fa fa-chevron-right range_slides_carousel_control_icons" aria-hidden="true"></span>
+				</a>
+
+			</div>
+
+		</div> <!--*-*-*-*-*-*-*-*-*-*- END BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*--></div>
+                                <div class="row" id="registration-div">
+                                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                        <div class="reg-box-container">
+                                            <div class="event-box">
+                                                <div class="event-header"><img src="assets/img/event-icon.png">
+                                                    <div class="event-heading">
+                                                        <h3>Registration Options</h3>
+                                                        <p>Select Attendee reg.<br>options below.<br></p>
+                                                    </div>
+                                                </div><div class="">
+  <label class="reg-options-radio" for="formCheck-1">
+    <input type="radio" class="form-check-input" name="reg-formCheck" id="formCheck-1" value="Anyone Can Register"/>Anyone Can Register
+  </label>
+  
+  <label class="reg-options-radio" for="formCheck-2">
+    <input type="radio" class="form-check-input" name="reg-formCheck" id="formCheck-2" value="Invite only / private"/>Invite only / private
+  </label>
+  
+  <label class="reg-options-radio" for="formCheck-3">
+    <input type="radio" class="form-check-input" name="reg-formCheck" id="formCheck-3" value="Allow invite guests"/>Allow invite guests
+  </label>
+  
+  <label class="reg-options-radio" for="formCheck-4">
+    <input type="radio" class="form-check-input" name="reg-formCheck" id="formCheck-4" value="Auto-field reg. fields"/>Auto-field reg. fields
+  </label>  
+</div>
+</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9 tags-div-registration">
+                                        <div class="row" id="shared-lists"><div class="field-selection-container">
+  <div class="col field-selection">
+      <h5 class="text-center">Field Selection</h5>
+      <div id="field-selection" class="list-group col">
+          <div class="list-group-item"><input type="text" id="fname" name="fname" placeholder="First Name" /></div>
+          <div class="list-group-item"><input type="text" id="lname" name="lname" placeholder="Last Name" /></div>
+          <div class="list-group-item"><input type="email" id="email" name="email" placeholder="Email" /></div>
+          <div class="list-group-item" draggable="false"><input type="text" id="phone" name="phone" placeholder="Phone #"/></div>
+          <div class="list-group-item" draggable="false"><input type="text" id="credit-card" name="credit-card" placeholder="Credit Card" /></div>
+          <div class="list-group-item" draggable="false"><input type="text" id="date-picker" name="date-picker" placeholder="Date Picker" /></div>
+          <div class="list-group-item" draggable="false"><input type="text" id="long-answer" name="long-answer" placeholder="Long Answer" /></div>
+          <div class="list-group-item" draggable="false"><input type="text" id="Short Answer" name="short-answer" placeholder="Short Answer" /></div>
+        </div>
+      </div>
+  </div>
+                                            <div class="col attendee-reg">
+                                                <h5 class="text-center">Attendee Registration</h5><div id="attendee-registration" class="list-group col">
+
+</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="demographics-div">
+                                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                        <div class="reg-box-container">
+                                            <div class="event-box">
+                                                <div class="event-header"><img src="assets/img/event-icon.png">
+                                                    <div class="event-heading">
+                                                        <h3>Demographics Options</h3>
+                                                        <p>Select Attendee demo-graphics options below.<br></p>
+                                                    </div>
+                                                </div><label class="demo-options-radio" for="demo-check-1">
+  <input type="radio" class="form-check-input" name="demo-check-1" id="demo-check-1" value="Required to Register"/>Required to Register
+</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                                        <div class="row" id="shared-lists"><div class="field-selection-container">
+  <div class="col field-selection all-demographics">
+      <select class="form-control demo-select" id="demo-select" name="demo-select">
+        <option value="1" selected>Select Demographics Template</option>
+        <option value="2">Template A</option>
+        <option value="2">Template B</option>
+        <option value="2">Template C</option>
+      </select>
+      <input class="form-control demo-search" type="search" placeholder="All Demographics Questions"/>
+      <div id="field-selection" class="list-group">
+        <select class="form-control demo-select" id="demo-select" name="demo-select">
+          <option value="1" selected>Which Company are you representing?</option>
+          <option value="2">Enter the City/State of the Company you represent</option>
+          <option value="2">Additional field 1</option>
+          <option value="2">Additional field 2</option>
+          <option value="2">Additional field 3</option>
+        </select>
+        </div>
+      </div>
+  </div>
+                                            <div class="col" id="demo-live-view"><div class="demo-live-heading">
+  <h6>DEMOGRAPHICS LIVE VIEW</h6>
+</div>
+<div class="list-group col">
+  <input class="form-control demo-live-view" type="search" placeholder="Which Companies are you representing?"/>
+</div><div class="form-group">
+  <label for="form-control-select">How many individuals does your company employ?</label>
+  <select multiple class="form-control form-control-lg table table-striped" id="form-control-select">
+    <option>0-10</option>
+    <option>10-100</option>
+    <option>100-500</option>
+    <option>500+</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="demo-live-city">City</label>
+  <input type="text" class="form-control" id="demo-live-city" placeholder="City of your Company">
+</div>
+
+<div class="form-group">
+  <label for="demo-live-state">State</label>
+  <input type="text" class="form-control" id="demo-live-state" placeholder="State of your Company">
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="yes" id="demo-live-hide-contact-info">
+  <label class="form-check-label" for="demo-live-hide-contact-info">
+    Check if you want to hide contact info
+  </label>
+</div>
+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="qualifications-div">
+                                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                        <div class="reg-box-container">
+                                            <div class="event-box">
+                                                <div class="event-header"><img src="assets/img/event-icon.png">
+                                                    <div class="event-heading">
+                                                        <h3>Qualification Options</h3>
+                                                        <p>Select Attendee qualification options below.<br></p>
+                                                    </div>
+                                                </div><label class="demo-options-radio" for="qual-options-check-1">
+  <input type="radio" class="form-check-input" name="qual-options-check-1" id="qual-options-check-1" value="Required to Register"/>Required to Register
+</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                                        <div class="row" id="shared-lists">
+                                            <div class="col" id="demo-live-view"><div class="demo-live-heading qualification-options-heading">
+  <h6>SELECT REQUIRED QUALIFICATIONS</h6>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="yes" id="demo-live-tax-id-num">
+  <label class="form-check-label" for="demo-live-tax-id-num">
+    Tax ID Number
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="yes" id="demo-live-company-letter-head">
+  <label class="form-check-label" for="demo-live-company-letter-head">
+    Company Letterhead
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="yes" id="demo-live-recent-paystub">
+  <label class="form-check-label" for="demo-live-recent-paystub">
+    Recent Paystub
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="yes" id="demo-live-hide-business-license">
+  <label class="form-check-label" for="demo-live-hide-business-license">
+    Business License
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="yes" id="demo-live-hide-business-photo-id">
+  <label class="form-check-label" for="demo-live-hide-business-photo-id">
+    Business Photo ID
+  </label>
+</div>
+
+<button class="btn btn-primary add-new-qualification-btn" type="button">
+  <i class="fas fa-plus">&nbsp;&nbsp;</i>ADD NEW QUALIFICATION</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-secondary" id="previous-btn" type="button">Previous Page</button><button class="btn btn-primary" id="next-btn" type="button">Next Page</button><button class="btn btn-primary" type="button">Save Changes</button>
+                                <button
+                                    class="btn btn-dark" type="button" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container task-bar">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center"><input type="search" placeholder="Search Events"></div>
+            <div class="col-sm-6 col-md-6 col-lg-auto col-xl-auto justify-content-sm-center align-items-sm-center"><label class="switch switch-one">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<p class="toggle-txt toggle-txt-one">Show All</p></div>
+            <div class="col-sm-6 col-md-6 col-lg-auto col-xl-auto justify-content-center align-items-center justify-content-sm-center align-items-sm-center"><label class="switch switch-two">
+  <input type="checkbox">
+  <span class="slider slider-b slider-two round"></span>
+</label>
+<p class="toggle-txt toggle-txt-two">Show Live</p></div>
+            <div class="col-sm-6 col-md-6 col-lg-auto col-xl-auto justify-content-center align-items-center justify-content-sm-center align-items-sm-center"><label class="switch switch-three">
+  <input type="checkbox">
+  <span class="slider slider-b slider-three round"></span>
+</label>
+<p class="toggle-txt toggle-txt-three">Show Recorded</p></div>
+            <div class="col-sm-6 col-md-6 col-lg-auto col-xl-auto justify-content-center align-items-center justify-content-sm-center align-items-sm-center"><label class="switch switch-four">
+  <input type="checkbox">
+  <span class="slider slider-b slider-four round"></span>
+</label>
+<p class="toggle-txt toggle-txt-four">Show Favorites</p></div>
+            <div class="col-lg-3 col-xl-3 d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center"><button class="btn btn-primary view-events-btn" type="button"><i class="icon ion-plus"></i>&nbsp;VIEW EVENTS DASHBOARD</button></div>
+            <div class="col-lg-2 col-xl-2 d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center"><button class="btn btn-primary view-events-btn" type="button" data-toggle="modal" data-target="#create-new-event"><i class="icon ion-plus"></i>&nbsp;CREATE NEW EVENT</button></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div id="event-box-container" class="event-box-container">
+                    <div class="event-box">
+                        <div class="event-header"><img src="assets/img/event-icon.png">
+                            <div class="event-heading">
+                                <h3>Computer Enterainment Show (CES)</h3>
+                                <p>January 1, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-image"></div>
+                    <div class="event-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="d-xl-flex align-items-xl-center social-icons">
+                        <div class="favorite"><i class="icon ion-heart"></i>
+                            <p class="favorite-txt">Favorite</p>
+                        </div>
+                        <div class="share"><i class="icon ion-android-share-alt"></i>
+                            <p class="favorite-txt">Share</p>
+                        </div>
+                        <div class="live"><button class="btn btn-primary live-btn" type="button">LIVE</button></div>
+                        <div class="modify-txt"><span><a href="#">Modify</a></span></div>
+                        <div class="view-txt"><span><a href="#">View</a></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div id="event-box-container" class="event-box-container">
+                    <div class="event-box">
+                        <div class="event-header"><img src="assets/img/event-icon.png">
+                            <div class="event-heading">
+                                <h3>The Builder Show 2020</h3>
+                                <p>January 15, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-image"></div>
+                    <div class="event-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="d-xl-flex align-items-xl-center social-icons">
+                        <div class="favorite"><i class="icon ion-heart"></i>
+                            <p class="favorite-txt">Favorite</p>
+                        </div>
+                        <div class="share"><i class="icon ion-android-share-alt"></i>
+                            <p class="favorite-txt">Share</p>
+                        </div>
+                        <div><button class="btn btn-primary recorded-btn" type="button">RECORDED</button></div>
+                        <div class="modify-txt"><span><a href="#">Modify</a></span></div>
+                        <div class="view-txt"><span><a href="#">View</a></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div id="event-box-container" class="event-box-container">
+                    <div class="event-box">
+                        <div class="event-header"><img src="assets/img/event-icon.png">
+                            <div class="event-heading">
+                                <h3>The Builder Show 2020</h3>
+                                <p>January 15, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-image"></div>
+                    <div class="event-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="d-xl-flex align-items-xl-center social-icons">
+                        <div class="favorite"><i class="icon ion-heart"></i>
+                            <p class="favorite-txt">Favorite</p>
+                        </div>
+                        <div class="share"><i class="icon ion-android-share-alt"></i>
+                            <p class="favorite-txt">Share</p>
+                        </div>
+                        <div class="live"><button class="btn btn-primary live-btn" type="button">LIVE</button></div>
+                        <div class="modify-txt"><span><a href="#">Modify</a></span></div>
+                        <div class="view-txt"><span><a href="#">View</a></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/4-Col-Small-Slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/select2.js"></script>
+</body>
+
+</html>
